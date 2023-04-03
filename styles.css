@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+nav {
+    margin:auto;
+    display: flex;
+}
+
+nav a {
+    transition: all 0.3s ease 0s;
+    padding: .5em 1em;
+}
+
+nav a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: .5em 1.5em;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+body {
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24282a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #edf0f1;
+}
+
+header {
+    background-color: #24252A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1% 2em 0 2em;
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1% 10%;
+    background-color: #24252A;
+    bottom: 0;
+    min-width: 100%;
+}
+
+.footer .contact a{
+    margin: 0 0 0 1em;
+    font-size: 1.5em;
+}
+
+.hero {
+    position: relative;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+
+.hero .about {
+    margin: 0 0 0 4em;
+    grid-column-start: 1;
+}
+
+.hero .video-bg {
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero .cta {
+    grid-column-start: 3;
+    padding: 20em 4em;
+}
+
+.hero .cta p {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.hero .about p {
+    margin-top: 1em;
+    line-height: 2;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em;
+}
+
+.bio img{
+    margin: .5em 0 4em 0;
+    object-fit: fill;
+    border-radius: 25%;
+}
+
+.values {
+    width: 50%;
+    display:flex;
+    justify-content: center;
+}
+
+.values div{
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.values i{
+    font-size: 8em;
+    margin-bottom: 16px;
+}
+
+#quote { 
+    width: 50%;
+    text-align: center;
+}
+
+.section {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orgs {
+    margin: 1em;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+}
+.employee {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.employee img {
+    margin-bottom: .5em;
+    width: 200px;
+    border-radius: 25%;
+}
+
+.employees {
+    display: flex;
+    padding: 1%;
+}
+
+.memoriam {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.details {
+    text-align: left;
+}
+
+.gallery img {
+    margin: .5em;
+    border-radius: 5%;
+    aspect-ratio: 16/9;
+    width: 600px;
+}
